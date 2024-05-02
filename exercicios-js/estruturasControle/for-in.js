@@ -7,3 +7,4 @@ const pessoa = {
 for (let propriedade in pessoa) {
     console.log(propriedade + ": " + pessoa[propriedade]);
 }
+
