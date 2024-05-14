@@ -9,6 +9,7 @@ const volvo = {
 };
 
 console.log(ferrari.__proto__); // Objeto pai
+console.log(Object.prototype);
 console.log(ferrari.__proto__ === Object.prototype);
 console.log(volvo.__proto__ === Object.prototype);
 console.log(Object.prototype.__proto__);
