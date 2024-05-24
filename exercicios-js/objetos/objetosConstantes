@@ -1,0 +1,16 @@
+// Pessoa -> 123 -> {...}
+const pessoa = { nome: "João" };
+pessoa.nome = "Pedro";
+console.log(pessoa);
+
+// Pessoa <- 456 -> {...}
+// pessoa = { nome: "Ana" };
+
+// Ou seja, desde que o endereço que a constante pessoa, permaneça a mesma eu posso alterar o conteúdo do objeto,
+// Mas não posso alterar a referência dessa constante, passando um outro endereço.
+
+// Congela o objeto pessoa, impossibilitando a modificação do mesmo
+Object.freeze(pessoa);
+pessoa.nome = "Maria"; // Não modificou o objeto
+pessoa.endereco = "Rua ABC"; // Não insere
+console.log(pessoa);
